@@ -1,0 +1,325 @@
+/* Basic styles */
+body {
+ 
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+ 
+  /* color: #333; */
+  
+}
+
+.background{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  height: 50vh;
+  width: 100%;
+  justify-content:center;
+  
+  
+}
+
+.background::before{
+  content: '';
+   background-image: url('https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,q_60,w_1600/d65ba5bc56f7e43d46a7d28f1b535754.jpg');
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+}
+
+
+
+header {
+  background-color: #8af264;
+  font-family: poppins;
+  font-size: 18px;
+  color: #069d06;
+  padding: 10px;
+}
+
+.contents{
+  font-family: poppins;
+  isolation: isolate;
+  
+
+}
+
+.contents h2{
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+}
+.contents ul li{
+  display: flex;
+  font-size: 25px;
+  margin: 10px;
+  align-items: center;
+  justify-content:center;
+}
+
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #383e37;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  isolation: isolate;
+}
+
+nav ul li a:hover {
+  transition: 0.5s;
+  background-color: #195304;
+  color: white;
+}
+
+.main {
+  
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: poppins;
+  color: #0c880c;
+  margin-bottom: 20px;
+  isolation: isolate;
+}
+
+p {
+  font-size: 25px;
+  font-family: poppins;
+  margin-bottom: 10px;
+  font-weight: bold;
+  isolation: isolate;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: ;
+  isolation: isolate;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a1{
+  color:#5a5858;
+}
+
+a2{
+  color:#079c07;
+}
+
+a:hover {
+  color: #777;
+}
+
+.main{
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+#head{
+  justify-content: center;
+  
+}
+#head-safety-gear{
+  justify-content: center;
+  height: 100vh;
+  
+}
+
+#safety_gear_body{
+  font-family: poppins;
+  display:flex;
+  margin:20px
+}
+#safety_gear_body ul li{
+
+  display:flex;
+}
+
+.safety-gear-contents{
+  display: flex;
+  text-align: left;
+  margin: 15px;
+}
+
+.safety_gear_image{
+  height: 10%;
+  width: 15%;
+  display: flex;
+}
+
+.about{
+  font-family: poppins;
+  font-weight: lighter;
+  justify-content: left;
+  
+}
+#about_para{
+  font-weight: normal;
+  font-size:20px;
+  text-align:left;
+  margin: 40px;
+}
+
+label{
+  font-family: poppins;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.social-media{
+  font-family: poppins;
+  font-size: 25px;
+  margin: 30px;
+}
+
+#logo{
+  height:30%%;
+  width: 20%;
+  border-radius: 50%;
+}
+
+.facebook:hover{
+  font-family: poppins;
+  font-size: 26px;
+  color: #3b5998;
+  transition:0.5s;
+}
+.twitter:hover{
+  font-family: poppins;
+  font-size: 26px;
+  color: #00acee;
+  transition:0.5s;
+}
+.instagram:hover{
+  font-family: poppins;
+  font-size: 26px;
+  color: #E1306C;
+  transition:0.5s;
+}
+
+#feedback{
+  margin:30px;
+}
+
+footer {
+  align-items: bottom;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+@media screen and (max-width: 600px){
+  .safety_gear_image{
+    height: 200px;
+    width: 350px;
+    display: flex;
+  }
+  nav ul li {
+    display: inline;
+    margin-right: 5px;
+    /* font-size: ; */
+  }
+  #logo{
+    height:100px;
+    width: 150px;
+    border-radius: 50%;
+  }
+}
+
+#langButton{
+  background-color: white;
+  font-family:poppins;
+  font-size: 15px;
+  color: #05a805;
+  height: 35px;
+  
+}
+#langButton:hover{
+  background-color: #004700;
+  font-family:poppins;
+  font-size: 15px;
+  color: white;
+  height: 35px;
+  transition: 0.5s;
+  
+}
+
+.contact {
+  background-color: #02caa2;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+  font-family: poppins;
+}
+
+.contact h2 {
+  color: #fff;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  background-color: #fff;
+  color: #333;
+}
+
+.contact button {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #eee;
+}
+
+
